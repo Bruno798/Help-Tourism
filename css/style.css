@@ -1,4 +1,4 @@
-/* Universal: */
+/* Fonts: */
 
 @font-face {
     font-family: ralewayBold;
@@ -7,19 +7,6 @@
 @font-face {
     font-family: ralewayRegular;
     src: url(../fonts/RalewayRegular.ttf);
-}
-
-html {
-    font-size: calc(100vw / 1920 * 18) !important;
-}
-
-body {
-    background: #E1E9EA;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Variáveis: */
@@ -31,7 +18,88 @@ body {
     --textSize: 1.1rem;
 }
 
+/* Media Queries */
+
+@media (max-width: 575.98px) { 
+    html {
+        font-size: calc(100vw / 1920 * 40) !important; 
+    }
+
+    :root {
+        --textSize: 1.6rem !important;
+    }
+    
+    .login {
+        height: 80vh !important;
+    }
+    
+    .login__form__col {
+        padding: 0 !important;
+    }
+
+    .login__img__col {
+        border: none !important;
+        border-bottom: .1rem solid rgba(112, 112, 112, .1) !important;
+    }
+
+    .login__form__col {
+        margin-top: 2rem !important;
+    }
+
+    .login__acess {
+        display: flex !important;
+        justify-content: center !important;
+        margin-top: 2rem !important;
+    }
+
+    .login__acess__btn {
+        width: 12rem !important;
+        height: 5rem !important;
+        font-size: 1.6rem !important;
+    }
+
+    .login__createAccount {
+        margin-top: 2rem !important;
+    }
+
+    .login__password__input::placeholder,
+    .login__email__input::placeholder {
+        font-size: 1.6rem !important;
+        margin-top: 1rem !important;
+    }
+
+    .login__password__input,
+    .login__email__input {
+        margin-top: 1rem !important;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: calc(100vw / 1920 * 20) !important; 
+    }
+}
+
 /* Styles */
+
+html {
+    font-size: calc(100vw / 1920 * 18);
+}
+
+body {
+    background: #E1E9EA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .login {
     width: 80vw;
@@ -111,9 +179,15 @@ body {
     justify-content: space-between;
 }
 
+.login__actions__remember {
+    display: flex;
+    align-items: center;
+}
+
 .login__actions__remember__form {
     font-family: var(--ralewayRegular);
     font-size:  var(--textSize);
+    margin-left: .8rem;
 }
 
 .login__actions__remember__input {
