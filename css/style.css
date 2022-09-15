@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: ralewayBold;
-    src: url(/fonts/RalewayBold.ttf);
+    src: url(../fonts/RalewayBold.ttf);
 }
 @font-face {
     font-family: ralewayRegular;
-    src: url(/fonts/RalewayRegular.ttf);
+    src: url(../fonts/RalewayRegular.ttf);
 }
 
 html {
