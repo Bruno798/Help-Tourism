@@ -1,0 +1,159 @@
+/* Styles */
+
+html {
+    font-size: calc(100vw / 1920 * 18);
+    @include small{
+        font-size: calc(100vw / 1920 * 40) !important; 
+    }
+    @include large{
+        font-size: calc(100vw / 1920 * 20) !important; 
+    }
+}
+body {
+    background: #E1E9EA;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login {
+    width: 80vw;
+    background: #FFF;
+    border-radius: 2rem;
+    padding: 0 4rem;
+    box-shadow: 0px 25px 46px rgba(0, 0, 0, 0.10);
+    @include small{
+        height: 80vh !important;
+    }
+}
+.login__img__col {
+    border-right: .1rem solid rgba(112, 112, 112, .1);
+    padding: 1rem 0;
+    @include small{
+        border: none !important;
+        border-bottom: .1rem solid rgba(112, 112, 112, .1) !important;
+    }
+}
+.login__form__col {
+    padding: 0 5rem;
+    display: flex;
+    align-items: center;
+    @include small{
+        margin-top: 2rem !important;
+        padding: 0 !important;
+    }
+}
+.login__title {
+    font-family: $ralewayBold;
+    color: $greyColor;
+    font-size: 2.8rem;
+}
+.login__email__form {
+    display: block;
+    font-family: $ralewayRegular;
+    font-size:  $textSize;
+}
+.login__email__input {
+    width: 100%;
+    border: none;
+    border-bottom: .1rem solid $greyColor;
+    background: transparent;
+    padding-left: .4rem;
+    font-family: $ralewayRegular;
+    &::placeholder {
+        opacity: .7;
+
+        @include small{
+            font-size: 1.6rem !important;
+            margin-top: 1rem !important;
+        }
+    }
+    &:focus {
+        outline: none;
+        padding-left: .4rem;
+    }
+    @include small{
+        margin-top: 1rem !important;
+    }
+}
+.login__password__form {
+    display: block;
+    font-family: $ralewayRegular;
+    font-size:  $textSize;
+}
+.login__password__input {
+    width: 100%;
+    border: none;
+    border-bottom: .1rem solid $greyColor;
+    background: transparent;
+    padding-left: .4rem;
+    font-family: $ralewayRegular;
+    &::placeholder {
+        opacity: .7;
+        @include small{
+            font-size: 1.6rem !important;
+            margin-top: 1rem !important;
+        }
+    }
+    &:focus {
+        outline: none;
+        padding-left: .4rem;      
+    }
+    @include small{
+        margin-top: 1rem !important;
+    }
+}
+.login__actions {
+    display: flex;
+    justify-content: space-between;
+}
+.login__actions__remember {
+    display: flex;
+    align-items: center;
+}
+.login__actions__remember__form {
+    font-family: $ralewayRegular;
+    font-size:  $textSize;
+    margin-left: .8rem;
+}
+.login__actions__remember__input {
+    cursor: pointer;
+}
+.login__actions__forgetPass__text {
+    font-family: $ralewayRegular;
+    color: $greyColor;
+    text-decoration: none;
+    font-size:  $textSize;
+    transition: .2s all;
+    &:hover {
+        color: $blueColor;
+    }
+}
+.login__acess__btn {
+    border-radius: 10rem;
+    width: 8rem;
+    height: 3rem;
+    background: $blueColor;
+    font-family: $ralewayBold;
+    color: #FFF;
+    border: none;
+    transition: .4s;
+    &:hover {
+        box-shadow: inset 0 0 18px 0px rgba(0, 0, 0, 1);
+    }
+    @include small{
+        width: 12rem !important;
+        height: 5rem !important;
+        font-size: 1.6rem !important;
+    }
+}
+.login__createAccount__text {
+    font-family: $ralewayRegular;
+    font-size:  $textSize;
+}
+.login__createAccount__text__link {
+    text-decoration: none;
+    color: $blueColor;
+    font-family: $ralewayBold;
+}

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/utils/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Help Tourism</title>
 </head>
 
@@ -14,7 +14,7 @@
     <div class="login">
         <div class="row">
             <div class="col-md-7 login__img__col">
-                <img src="img/art__0.png" width="100%" alt="Art">
+                <img src="assets/images/art__0.png" width="100%" alt="Art">
             </div>
             <div class="col-md-5 login__form__col">
                 <div class="w-100">
@@ -22,18 +22,18 @@
                         Bem vindo ao <br>
                         Help Tourism!
                     </h1>
-                    <form action="/" method="post">
+                    <form action="/" method="POST">
                         <div class="login__email mb-4">
                             <label for="email" class="login__email__form mb-2"><i>E-mail</i></label>
-                            <input type="email" id="email" class="login__email__input" placeholder="Digite seu e-mail" required>
+                            <input type="email" name="email" id="email" class="login__email__input" placeholder="Digite seu e-mail" required>
                         </div>
                         <div class="login__password mb-4">
-                            <label for="password" class="login__password__form mb-2">Senha</label>
+                            <label for="password" name="password" class="login__password__form mb-2">Senha</label>
                             <input type="password" id="password" class="login__password__input" placeholder="Digite sua senha" required>
                         </div>
                         <div class="login__actions mb-4">
                             <div class="login__actions__remember">
-                                <input type="checkbox" id="remember" class="login__actions__remember__input">
+                                <input type="checkbox" name="remember" id="remember" class="login__actions__remember__input">
                                 <label for="remember" class="login__actions__remember__form">Lembrar</label>
                             </div>
                             <div class="login__actions__forgetPass">
@@ -46,7 +46,7 @@
                     </form>
                     <div class="login__createAccount">
                         <p class="login__createAccount__text">
-                            Não tem cadastro? <a href="" class="login__createAccount__text__link">Cadastre-se</a>
+                            Não tem cadastro? <a href="#" class="login__createAccount__text__link">Cadastre-se</a>
                         </p>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>
